@@ -1,4 +1,4 @@
-# FretMUN
+# POMFRET MUN
 
 Prototype site for Pomfret School’s Model UN conference. Plain HTML and CSS, so it can be edited and published on GitHub Pages without a build step.
 
