@@ -1,12 +1,12 @@
 # POMFRET MUN
 
-Prototype site for Pomfret School’s Model UN conference. Plain HTML and CSS, so it can be edited and published on GitHub Pages without a build step.
+Prototype site for Pomfret School’s Model UN conference. The name is temporary. Plain HTML and CSS, so it can be edited and published on GitHub Pages without a build step.
 
 ## Edit
 
 - Page text is in `index.html`, `conference.html`, `committees.html`, and `registration.html`.
 - Colors and type are the variables at the top of `css/styles.css`.
-- Photos and the logo are in `images/`. The campus photos are about 1000 pixels wide. Drop in a larger file with the same name when you have one.
+- The campus photo is `images/campus-hall.jpg`. To use a video instead, replace the image in the home hero with a `<video autoplay muted loop playsinline>` tag. The comment in `index.html` shows the markup.
 
 Slots that still need real content are marked in the pages: the date, secretariat names, committee topics, the schedule, and the registration link.
 

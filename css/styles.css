@@ -81,7 +81,7 @@ button:focus-visible {
   justify-content: space-between;
   gap: 1rem;
   width: var(--bar);
-  margin: -2.15rem auto 0;
+  margin: 0.75rem auto 0;
   padding: 0.4rem 1.15rem 0.4rem 0.45rem;
   background: var(--crimson);
   color: var(--white);
@@ -154,36 +154,54 @@ button:focus-visible {
   text-underline-offset: 0.35em;
 }
 
-.vista {
+.hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 78vh;
+  overflow: hidden;
+  color: var(--white);
+  text-align: center;
+  background: #7f96a6;
+}
+
+.hero .bar {
+  position: absolute;
+  top: 0.85rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.hero-media,
+.hero-media img,
+.hero-media video {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 36vh;
-  min-height: 200px;
+  height: 100%;
+}
+
+.hero-media img,
+.hero-media video {
   object-fit: cover;
   object-position: center 42%;
 }
 
-.hall,
-.page-hero {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  color: var(--white);
-  background: #7f96a6 url("../images/campus-hall.jpg") center 42% / cover no-repeat;
-}
-
-.hall {
-  min-height: 58vh;
-  margin-top: -2.4rem;
-  padding: 7rem 1.25rem 4.5rem;
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 1.25rem;
 }
 
 .wordmark {
   margin: 0;
-  font-size: clamp(3.5rem, 11vw, 7.6rem);
+  font-size: clamp(2.8rem, 8vw, 6.4rem);
   font-weight: 500;
-  letter-spacing: 0.14em;
-  text-indent: 0.14em;
-  line-height: 0.85;
+  letter-spacing: 0.08em;
+  text-indent: 0.08em;
+  line-height: 0.9;
+  text-transform: uppercase;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28);
 }
 
@@ -197,20 +215,14 @@ button:focus-visible {
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
 }
 
-.bar-static {
-  margin: 0.85rem auto 0;
-}
-
 .page-hero {
-  min-height: 280px;
-  margin-top: 0.85rem;
-  padding: 3rem 1.25rem;
+  padding: 2.5rem 1.25rem 0.25rem;
+  text-align: center;
 }
 
 .page-hero h1 {
   margin: 0;
   font-size: clamp(3rem, 7vw, 5.4rem);
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
 }
 
 .intro {
@@ -476,19 +488,17 @@ th {
     grid-template-columns: 1fr;
   }
 
-  .hall {
-    margin-top: 0;
-    min-height: 70vh;
-    padding-top: 4.5rem;
+  .bar {
+    margin: 0.75rem auto 0;
   }
 
-  .bar {
-    margin-top: 0.75rem;
+  .hero {
+    min-height: 70vh;
   }
 
   .wordmark {
-    letter-spacing: 0.06em;
-    text-indent: 0.06em;
+    letter-spacing: 0.04em;
+    text-indent: 0.04em;
   }
 }
 
